@@ -7,7 +7,7 @@ import productRoutes from './routes/productRoutes.js'
 import cors  from 'cors';
         
 
-app.use(cors())
+
 
 dotenv.config()
 
@@ -15,6 +15,8 @@ dotenv.config()
 connectDB()
 
 const app = express()
+
+app.use(cors())
 
 
 app.get('/', (req, res) => {
