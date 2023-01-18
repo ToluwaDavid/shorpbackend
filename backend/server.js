@@ -4,8 +4,12 @@ import connectDB from './config/db.js'
 import colors from 'colors'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import productRoutes from './routes/productRoutes.js'
+<<<<<<< HEAD
 import cors  from 'cors';
         
+=======
+import userRoutes from './routes/userRoutes.js'
+>>>>>>> 184d56f (Updating the backend authentication)
 
 
 
@@ -16,7 +20,11 @@ connectDB()
 
 const app = express()
 
+<<<<<<< HEAD
 app.use(cors())
+=======
+app.use(express.json())
+>>>>>>> 184d56f (Updating the backend authentication)
 
 
 app.get('/', (req, res) => {
@@ -25,6 +33,7 @@ app.get('/', (req, res) => {
 
 
 app.use('/api/products', productRoutes)
+app.use('/api/users', userRoutes)
 
 
 
