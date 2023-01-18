@@ -74,7 +74,3 @@ const products = [
 ]
 
 export default products
-
-// module.exports = products
-// mongodb+srv://shorp:shorp1234@cluster0.56n9z.mongodb.net/shorp
-// mongodb+srv://<username>:<password>@cluster0.56n9z.mongodb.net/?retryWrites=true&w=majority
